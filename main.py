@@ -1,81 +1,132 @@
-import builtins
+"""COMMENTS STARTS"""
 
-# Single Line Comment
-print('Hello python')
+#Single Line Comments -> use # for the single line comments
+print('Hello Vipin')
 
-""""This is multi line comments"""
+#Multi Line Comments -> use """ """ for the Multi line comments
+"""My Name is vipin ~
+my age is 38 years old"""
 
+"""COMMENTS ENDS"""
 
-#Variables
+#****************************************************************************************************************
+
+"""VARIABLES STARTS"""
 
 name = "Vipin"
-
 
 #Case Sensitive
 vipinGusain = "Vipin" #camelCase
 VipinGusain = "Vipin" #PascalCase
 vipin_gusain = "Vipin" #snake_case
 
+"""VARIABLES ENDS"""
 
-#Data Types - Integers types
-# 1,2,3, ... # natural numbers
-# 0,1,2,3, ... # whole numbers
-# -3, -2, -1, 0, 1, 2, 3 # integer numbers
+#****************************************************************************************************************
+
+
+"""DATA TYPES STARTS"""
+#1. Integers (Numbers) - - First Data Type
+# 1,2,3, ... #natural numbers
+# 0,1,2,3, ... #whole numbers
+# -3, -2, -1, 0, 1, 2, 3 #integer numbers
 # 1.5 #float numbers
 # 10/2 #fraction numbers
 
 a = 12
-print(type(a)) 
-
-#Complex Data Types
-v=34j #complex data type
-
-
-#Data Types - Strings
-str = "Vipin 0906/1987 @&*()"
-print(type(str))
-
-num = 'a'
-num2 =65
-print(ord(num)) #with the help of ord you can check unicode of the characters
-
-print(chr(num2)) #with the help of chr you can covert unicode to character 
-
-
-""""Indexing of string"""
-
-name = "Aaira"
-print(name[2])
-
-
-""""String Slicing"""
-
-Fname = "Vipin Gusain"
-
-print(Fname[6:12:1]) #starting point:, stop point: : how many slice you want to do
-
-
-# DataType Type Conversion
-
-a = 50
-# Use builtins.str instead of the corrupted str()
-a = builtins.str(a) 
 print(type(a))
 
+#Complex Data Type (or iyota)
+k = 10j  #just put j in the last of any digit its become complex data type
+print(type(k))
+
+#---------------------------------------------------------------------------------------------------------------
+
+#2. String - Second Data Type
+string = "asdfasd 343434 #$$%%##@@"
+print(type(string))
 
 
 
-#Data Types - Boolean
+#string unicode 
+a = 'Q'
+emoji = '🤪'
+print('a unicode is', ord(a))
+print('emoji unicode is', ord(emoji))
+
+emojiUnicode = 129322
+print('convert unicode to character', chr(emojiUnicode))
+
+
+#String Indexing
+animal = 'sher'
+print('string indexing of 1 is =>',animal[1])
+print('string negative indexing  of r is =>',animal[-1])
+
+#String Slicing - #starting point:, stop point: : steps of our slicing
+
+fName = "Vipin Kumar Gusain"
+print('String Slicing method 1 = ',fName[12:18:1])
+print('String Slicing method 2 = ',fName[6:11:])
+
+
+
+#3. Boolean - Third Data Type
+bol = True
+bo2 = False
+print('Boolean type is ', type(bol))
+
+
+#DataType 4 Types of Conversion - int(), str(), float(), bool()
+
+#int() to str()
+num = 12
+print("type of num = ", type(num))
+
+num = str(num)
+print("integer to string conversion = ", type(num))
+
+
+#str() to int()
+aa = "22"
+aa = int(aa)
+
+print('string to integer conversion = ', aa)
+
+
+#int() to bool() 
+b = 12
+b=bool(b)
+print('interger to boolean conversion = ', b)
 
 #Falsy values => false, 0, "", 0.0, [], {}, ()
-bol = ""
-print(bool(bol)) #false 
-
-
-positiveValue = 12
-print(bool(positiveValue)) #true 
+number = 0.0
+print('falsy value of boolean is ',bool(number))
 
 
 
+#There are 2 types of conversion - implicit and explicit 
 
+"""DATA TYPES ENDS"""
+
+#****************************************************************************************************************
+
+
+
+
+"""INPUT AND OUTPUT STARTS"""
+#We also use for output is print() function
+first_name = "Vipin"
+age = 38
+#how to write normal string
+print('My name is',first_name,'.','And my age is',age)
+
+#how to write formatted string
+print(f'My name is {first_name }. And my age is {age}')
+
+
+
+"""INPUT AND OUTPUT ENDS"""
+
+#****************************************************************************************************************
 
