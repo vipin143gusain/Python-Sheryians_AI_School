@@ -116,7 +116,7 @@ print('falsy value of boolean is ',bool(number))
 
 """INPUT AND OUTPUT STARTS"""
 #We also use for output is print() function
-first_name = "Vipin"
+first_name = "Vipin" 
 age = 38
 #how to write normal string
 print('My name is',first_name,'.','And my age is',age)
@@ -125,8 +125,25 @@ print('My name is',first_name,'.','And my age is',age)
 print(f'My name is {first_name }. And my age is {age}')
 
 
+#Input
+age = int(input('What is your age'))
+full_name = input('What is your full name')
+
+print(f'My name is {full_name} and my age is {age} yrs old')
+
+print('type of age is = ',type(age))
+print('type of full_name is = ',type(full_name))
+
 
 """INPUT AND OUTPUT ENDS"""
 
 #****************************************************************************************************************
+
+
+
+
+
+
+
+
 
