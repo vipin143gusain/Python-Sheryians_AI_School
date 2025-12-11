@@ -147,30 +147,44 @@ a = range(1,21,1)
 
 # • Check wether the number is prime or not.
 
-primeNumber = int(input('Write the Prime Number - '))
+# primeNumber = int(input('Write the Prime Number - '))
 
-count = 0
-for i in range(1, primeNumber+1):
-    if primeNumber % i == 0 : 
-        count = count + 1
+# count = 0
+# for i in range(1, primeNumber+1):
+#     if primeNumber % i == 0 : 
+#         count = count + 1
 
-if count == 2 : 
-    print(f'{primeNumber} is the prime number')
-else:   print(f'{primeNumber} is not the prime number')    
+# if count == 2 : 
+#     print(f'{primeNumber} is the prime number')
+# else:   print(f'{primeNumber} is not the prime number')   
+
+
 
 # • Reverse a string without using in build functions. 
 
+# reverseStr = input('Reverse a string : - ')
 
-# • Check string is Pallindreme or not
-
-
-
-
-
-
-
+# # print(reverseStr[::-1]) - #This is one method
+# revFinal = ''
+# for i in range(len(reverseStr)-1,-1,-1) : 
+#   revFinal = revFinal + reverseStr[i]
+# print(revFinal)
 
 
+
+ 
+
+
+# • Check string is Palindrome or not
+
+name = "MAM"
+
+emptyString = ""
+for i in range(len(name)-1,-1,-1) :
+  emptyString = emptyString + name[i]
+
+if emptyString == name : print('This is a Palindrome')
+else : print('This is not a Palindrome')
 
 
 
