@@ -177,14 +177,37 @@ a = range(1,21,1)
 
 # • Check string is Palindrome or not
 
-name = "MAM"
+# name = "MAM"
 
-emptyString = ""
-for i in range(len(name)-1,-1,-1) :
-  emptyString = emptyString + name[i]
+# emptyString = ""
+# for i in range(len(name)-1,-1,-1) :
+#   emptyString = emptyString + name[i]
 
-if emptyString == name : print('This is a Palindrome')
-else : print('This is not a Palindrome')
+# if emptyString == name : print('This is a Palindrome')
+# else : print('This is not a Palindrome')
+
+
+
+# Count all letters, digits, and special symbols from a given string
+# Given: str1 = "P@#yn26at^&i5ve"
+# Expected Outcome:
+# Total counts of chars, digits, and symbols
+# Chars = 8
+# Digits = 3
+# Symbol = 4
+
+str1 = "P@#yn26at^&i5ve"
+Chars = 0
+Digits = 0
+Symbol = 0
+
+for i in str1 :
+  # print(i)
+  if i.isdigit(): Chars+=1
+  elif i.isalpha(): Digits+=1
+  else: Symbol+=1
+print(f"Chars =  {Chars}\n Digits = {Digits} \n Symbol = {Symbol}"  ) 
+
 
 
 
